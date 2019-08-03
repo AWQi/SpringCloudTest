@@ -1,0 +1,7 @@
+spring:
+    cloud:
+        confing:
+            native:
+                search-locations: classpath:/config
+server:
+    port: 8762

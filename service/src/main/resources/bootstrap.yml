@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: service-hi
+  profiles:
+    active: native
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/   #注册eureka  server 发布的服务
+  instance:
+    non-secure-port: ${server.port:8888} #非ssl端口，若环境变量中有server.port有值，则使用环境变量的值，没有则使用8080
+    metadata-map:
+      instanceid: ${spring.application.name}:${random.value}  #注册在  eureka server里的 实例  id
+#
+#  client:
+#    service-url:
+#    availability-zones: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/

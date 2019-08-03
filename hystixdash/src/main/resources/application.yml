@@ -1,0 +1,17 @@
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+spring:
+    application:
+        name: hystrixDash
+server:
+    port: 8766
+
+
+#springboot 2.x ртиолМ╪с
+#management:
+#    server:
+#        servlet:
+#            context-path: /
