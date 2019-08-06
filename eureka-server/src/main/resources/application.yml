@@ -6,7 +6,7 @@ eureka:
     fetch-registry: false #q启动时报警
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    #服务注册地址
-#    register-with-eureka: false #当前 不到Eureka Server上注册
+    register-with-eureka: false #当前 不到Eureka Server上注册
 
 
 server:

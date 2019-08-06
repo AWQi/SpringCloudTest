@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableHystrix
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
 @EnableFeignClients
 @EnableZuulProxy //网关代理
 public class FeignApplication {
